@@ -6,7 +6,7 @@ You can find more detailes [here](https://projecteuler.net)
 
 This repository contains only the solution for the first one-hundred problems.
 
-- [ ] Problem 1
+- [x] Problem 1
 - [ ] Problem 2
 - [ ] Problem 3
 - [ ] Problem 4
