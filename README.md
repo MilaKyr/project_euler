@@ -8,7 +8,7 @@ This repository contains only the solution for the first one-hundred problems.
 
 - [x] [Problem 1](problems/prb_1.py)
 - [x] [Problem 2](problems/prb_2.py)
-- [ ] Problem 3
+- [x] [Problem 3](problems/prb_3.py)
 - [ ] Problem 4
 - [ ] Problem 5
 - [ ] Problem 6
