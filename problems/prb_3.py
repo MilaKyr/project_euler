@@ -7,7 +7,6 @@ What is the largest prime factor of the number 600851475143 ?
 from typing import Set
 import math
 import sys
-from copy import deepcopy
 
 
 # Eratosthene’s method with capping to sqrt(value)
@@ -21,9 +20,9 @@ def all_prime_numbers(value: int) -> Set[int]:
     return possible_values - trespassed_values
 
 
-def get_trespassed_for(value, max_value, possible_values):
+def get_trespassed_for(value: int, max_value: int, possible_values: Set[int]) -> Set[int]:
     sub_trespassed = set()
-    new_value = deepcopy(value)
+    new_value = value
     while new_value < max_value:
         new_value += value
         if new_value in possible_values:
@@ -31,7 +30,7 @@ def get_trespassed_for(value, max_value, possible_values):
     return sub_trespassed
 
 
-def max_prime_factor(for_value: int, from_set: Set[int]):
+def max_prime_factor(for_value: int, from_set: Set[int]) -> int:
     for prime_number in sorted(from_set, reverse=True):
         if for_value % prime_number == 0:
             return prime_number
