@@ -14,8 +14,8 @@ This repository contains only the solution for the first one-hundred problems.
 - [x] [Problem 6](problems/prb_6.py)
 - [x] [Problem 7](problems/prb_7.py)
 - [x] [Problem 8](problems/prb_8.py)
-- [ ] Problem 9
-- [ ] Problem 10
+- [x] [Problem 9](problems/prb_9.py)
+- [x] [Problem 10](problems/prb_10.py)
 - [ ] Problem 11
 - [ ] Problem 12
 - [ ] Problem 13

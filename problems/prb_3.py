@@ -10,8 +10,8 @@ import sys
 
 
 # Eratosthene’s method with capping to sqrt(value)
-def all_prime_numbers(value: int) -> Set[int]:
-    sqrt_max_value = int(math.sqrt(value))
+def all_prime_numbers(value: int, use_sqrt: bool = True) -> Set[int]:
+    sqrt_max_value = int(math.sqrt(value)) if use_sqrt else value
     possible_values = {2, *set(range(3, sqrt_max_value, 2))}
     trespassed_values = set()
     for possible_value in sorted(possible_values):
