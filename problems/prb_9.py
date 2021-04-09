@@ -8,23 +8,19 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 """
 from typing import Tuple, Optional
-import math
 import functools
 
-MAX_A = 500
-MAX_B = 500
+MAX_A = 100
+MAX_B = 100
 TRIPLET_SUM = 1000
 
 
 def get_pythagorean_triplet() -> Optional[Tuple[int, int, float]]:
-    for a in range(3, MAX_A):
-        for b in range(a + 1, MAX_B):
-            c = a ** 2 + b ** 2
-            sqrt_c = math.sqrt(c)
-            if int(sqrt_c + 0.5) ** 2 == c:
-                triplet = (a, b, sqrt_c)
-                if sum(triplet) == TRIPLET_SUM:
-                    return triplet
+    for n in range(1, MAX_A):
+        for m in range(n+1, MAX_A):
+            triplet = (2*m*n, m**2 - n**2, m**2 + n**2)  # Euclid's formula for natural numbers
+            if sum(triplet) == TRIPLET_SUM:
+                return triplet
     return None
 
 
