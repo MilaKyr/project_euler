@@ -35,11 +35,6 @@ GRID = [
 ]
 
 
-matrix = [[1, 2, 3, 4],
-           [5, 6, 7, 8],
-           [9, 10, 11, 12]]
-
-
 def compute_products(values: Union[List[int], Tuple[int, ...]]) -> List[int]:
     len_value = len(values) - 1
     return [math.prod(values[i:i+N]) for i in range(len_value)]
