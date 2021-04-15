@@ -10,7 +10,7 @@ from typing import List
 
 
 def is_palindrome(value: int) -> bool:
-    numbers = list(str(value))
+    numbers = str(value)
     middle = int(len(numbers) / 2)
     first_part = numbers[:middle]
     second_part = numbers[middle:] if len(numbers) % 2 == 0 else numbers[middle+1:]

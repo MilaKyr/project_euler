@@ -13,7 +13,7 @@ DENOMINATORS = [3, 4, 6, 7, 8, 9, 11, 13, 16, 17, 19]  # avoid 5 and 10, they ar
 
 
 def get_last_digit(value: int) -> int:
-    return int(list(str(value))[-1])
+    return int(str(value)[-1])
 
 
 def increment(value: int) -> int:

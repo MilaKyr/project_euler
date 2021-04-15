@@ -35,7 +35,7 @@ HUGE_NUMBER_AS_STR = "73167176531330624919225119674426574742355349194934\
 
 
 if __name__ == "__main__":
-    list_of_int = [int(n) for n in list(HUGE_NUMBER_AS_STR)]
+    list_of_int = [int(n) for n in HUGE_NUMBER_AS_STR]
     sub_lists = [list_of_int[i:i+N_ADJACENT_DIGITS] for i in range(LEN_HUGE_NUMBER)]
     products = [reduce(lambda x, y: x*y, sub_list) for sub_list in sub_lists]
     print("The value of the product of thirteen adjacent "
